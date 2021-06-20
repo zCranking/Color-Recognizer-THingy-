@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    <title>Color Recognizer</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="main.js"></script>
+</head>
+<body>
+    <div class="container">
+        <center>
+          <h1 class="headings">
+            Thingy Color Recognition
+          </h1>
+          <br><br>
+    
+          <p style="font-size: 30px;">Model is trained to identify the following colors: </p>
+          <b class="thingystobeidentified">
+              <p style="color: red;">
+                  Red
+              </p>
+            <p style="color: orange;">
+                Orange
+            </p>
+            <p style="color: Yellow;">
+                Yellow
+            </p>
+            <p style="color: Green;">
+                Green
+            </p>
+            <p style="color: blue;">
+                Blue
+            </p>
+            <p style="color: black">
+                White
+            </p>
+            </b>
+          <label>Webcam View - </label>
+          <div id="webcam"></div>
+          <br><br>
+          <div id="result"></div>
+          <br><br>
+          <button onclick="snapshot()" class="btn btn-success">
+            Image of thee Thingy
+          </button>
+          <br><br>
+          <button onclick="check()" 
+          class="btn btn-warning">
+            Identify thee Thingy
+          </button>
+          <p style="font-size: 22px;" id="object-name">Object :  </p>
+          <p style="font-size: 22px;" id="object-accuracy">Accuracy :  </p>
+        </center>
+    
+      </div>
+</body>
+</html>
